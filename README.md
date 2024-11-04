@@ -23,17 +23,6 @@ we will then use logging and monitoring services to track the pipelines health.
 
 📈 Cloud Monitoring: A service for observing the performance, availability, and health of your infrastructure and applications.
 
-
-This project was born from the harsh reality that, while I'm still eager to build data engineering projects with Airflow on GCP, Composer 2 is no longer available for free. To address this, I've outlined two options for completing the project:
-
-Option 1: Airflow on a VM. This is the most cost-effective approach. You can even complete it using the GCP Free Trial account (which provides $300 for 90 days). While it requires a bit more manual setup, I'll guide you through each step.
-
-Option 2: Cloud Composer. I tested this solution with both Composer 2 and the preview release of Composer 3. Unfortunately, Google's recent policy change (effective May 11th) means you can't create Composer 2 environment using a Free Trial account. The minimum requirement for even the Small Composer is 600GB of Persistent Disk SSD, which exceeds the Free Trial quota of 500GB. To use this option with Composer 2, you'll need to activate your GCP account.
-
-Screenshot (1912)2
-
-Screenshot (1911)2
-
 this project will use the PortWatch IMF Daily Port Activity Data and Trade Estimates dataset. This dataset provides daily counts of port calls, as well as estimates of import and export volumes (in metric tons) for 1642 ports worldwide. It leverages real-time data on vessel movements, specifically Automatic Identification System (AIS) signals, as its primary data source. This dataset contains over 3.3 million rows.
 
 date: all port call dates are expressed in UTC.
@@ -104,7 +93,7 @@ export: total export volume (in metric tons) of all ships entering the port at t
 
 
 ## ⚡Cloud Run Function
-![cloud run function.](cloud_trigger.py)
+[cloud run function.](cloud_trigger.py)
 
 ## ✨ Cloud Composer
-![cloud run function.](composer_trigger.py)
+[cloud run function.](composer_trigger.py)
