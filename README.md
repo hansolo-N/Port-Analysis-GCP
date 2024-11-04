@@ -96,4 +96,4 @@ export: total export volume (in metric tons) of all ships entering the port at t
 [cloud run function.](cloud_trigger.py)
 
 ## ✨ Cloud Composer
-[cloud run function.](composer_trigger.py)
+[composer function.](composer_trigger.py)
